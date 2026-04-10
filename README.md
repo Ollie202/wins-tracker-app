@@ -1,62 +1,63 @@
-# Money Made
+# Wins Tracker App
 
-**Stop guessing. Start tracking. Know exactly how much you're making.**
+A personal monthly wins tracker for logging earnings, setting goals, and visualizing income sources — built with zero build tools.
 
-Whether it's bounties, content deals, NFT flips, ambassador programs, or X monetization — if you're earning online, this app makes sure every dollar is accounted for.
+## Demo
 
-## Use It Now
+**[Open Wins-Tracker-App](https://wins-tracker-app.vercel.app/)**
 
-**[Open Money Made](https://wins-tracker-app.vercel.app/)**
+## Features
 
-No sign-up. No downloads. Just open and start logging.
-
-## What It Does
-
-You log your wins. The app does the rest.
-
-- **Log earnings** — project name, amount, source, month. Done in seconds.
-- **Set monthly goals** — watch your progress bar fill up as you stack.
-- **See where your money comes from** — source breakdown shows you what's actually paying.
-- **5 chart types** — Bar, Line, Area, Radar, Pie. Switch between them instantly.
-- **Dark & Light mode** — because we respect your eyes at 2am.
-- **CSV Import & Export** — back up your data, move to a new device, or pull into Google Sheets.
-- **Works on any device** — phone, tablet, laptop. Fully responsive.
-
-## How to Use It
-
-1. **Open the app** — [wins-tracker-app.vercel.app](https://wins-tracker-app.vercel.app/)
-2. **Click "+ Log a New Bag"** — enter the project, amount, source, and month
-3. **Set a goal** — click "Set Goal" on any month to give yourself a target
-4. **Switch chart types** — use the dropdown above the chart to visualize differently
-5. **Export your data** — click the file icon (top right) to back up or download CSV
-6. **Import data** — paste CSV or upload a `.csv` file to restore or migrate
-
-Your data saves automatically in your browser. Export CSV regularly as a backup.
-
-## Who Is This For
-
-- Freelancers tracking project income
-- Web3 builders logging bounties, ambassador pay, and contest wins
-- Content creators tracking monetization across platforms
-- Anyone who earns from multiple sources and wants clarity
+- Log monthly wins with project name, amount, and source category
+- Set monthly earning goals with progress bars
+- 5 chart types: Bar, Line, Area, Radar, Pie
+- Source breakdown with yearly/monthly views
+- Custom source categories (add/remove your own)
+- Dark / Light theme toggle
+- CSV Import & Export (clipboard, file download, file upload)
+- All data saved locally in your browser via `localStorage`
+- Switch devices by exporting CSV from one and importing on another
+- Year navigation to track across multiple years
+- Reset controls for individual months or full year
+- Fully responsive — works on mobile and desktop
 
 ## Project Structure
 
 ```
-money-made-tracker/
-├── index.html    # The entire app — single file, zero dependencies
+Wins-Tracker-App/
+├── index.html    # The entire app (single file)
 ├── demo.html     # Demo version with sample data
 ├── README.md
 └── LICENSE
 ```
 
-## Run It Yourself
+## How to Run
 
-```bash
-git clone https://github.com/Ollie202/money-made-tracker.git
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ollie202/Wins-Tracker-App.git
+   ```
+2. Open `index.html` in your browser.
+
+No npm, no Vite, no build step. Just open the file.
+
+## CSV Format
+
+**Wins:**
+```
+Year,Month,Project,Amount,Source
+2026,Jan,My Bounty,100,Bounties
+2026,Feb,Content Deal,50,Content
 ```
 
-Open `index.html` in your browser. That's it. No npm, no Vite, no build step.
+**Goals:**
+```
+GOAL,Year,Month,Target
+GOAL,2026,Jan,500
+GOAL,2026,Feb,400
+```
+
+Export from one device, import on another — your data travels with you.
 
 ## Built With
 
@@ -66,4 +67,4 @@ Open `index.html` in your browser. That's it. No npm, no Vite, no build step.
 
 ## License
 
-Open source under the [MIT License](LICENSE). Use it, fork it, make it yours.
+This project is open source and available under the [MIT License](LICENSE).
